@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Display Technology: Industry Trends & Market Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #118AB2;
+        }
+        .stat-label {
+            font-size: 0.875rem;
+            color: #4A5568;
+            margin-top: 0.25rem;
+        }
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #073B4C;
+        }
+        .section-intro {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #4A5568;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            color: #FF6B6B;
+        }
+        .feature-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #073B4C;
+        }
+        .feature-description {
+            font-size: 0.875rem;
+            color: #4A5568;
+            line-height: 1.5;
+        }
+        .comparison-table {
+            width: 100%;
+            margin-top: 1rem;
+            border-collapse: collapse;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #E2E8F0;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #F1F5F9;
+            font-weight: 600;
+        }
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            background-color: rgba(248, 249, 250, 0.95);
+            backdrop-filter: blur(5px);
+            z-index: 50;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .nav-link {
+            color: #118AB2;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            background-color: #118AB2;
+            color: white;
+        }
+
+        .flowchart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .flowchart-node {
+            background-color: #4D96FF;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-weight: 600;
+            min-width: 200px;
+            text-align: center;
+        }
+        .flowchart-arrow {
+            font-size: 1.5rem;
+            color: #4D96FF;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="nav-sticky">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center space-x-2 md:space-x-4">
+                <a href="#market-dominance" class="nav-link">Market Leadership</a>
+                <a href="#the-wall" class="nav-link">The Wall</a>
+                <a href="#onyx-led" class="nav-link">Onyx LED</a>
+                <a href="#interactive-innovation" class="nav-link">Interactive Tech</a>
+                <a href="#software-ai" class="nav-link">Software & AI</a>
+                <a href="#future-forward" class="nav-link">Future Trends</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-12 text-center bg-gradient-to-r from-[#118AB2] to-[#06D6A0]">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Samsung's Display Dominance</h1>
+            <p class="text-xl text-gray-200 max-w-3xl mx-auto">An In-Depth Look at Industry Trends, Market Leadership, and Technological Advancements in Commercial Display Solutions.</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section id="market-dominance" class="py-12">
+            <h2 class="section-title text-center">Unrivaled Market Leadership</h2>
+            <p class="section-intro text-center">
+                Samsung Electronics has consistently asserted its dominance in the global display market, maintaining a leading position for nearly two decades in televisions and over fifteen years in digital signage. This sustained success is built on relentless innovation, a vast portfolio, and a deep understanding of evolving market needs across consumer and commercial sectors.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="stat-card">
+                    <div class="stat-number">19</div>
+                    <div class="stat-label">Consecutive Years as Global TV Market Leader</div>
+                    <p class="text-xs text-gray-500 mt-1">(28.3% Market Share in 2024)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Consecutive Years as #1 Digital Signage Manufacturer</div>
+                     <p class="text-xs text-gray-500 mt-1">(33% Market Share in 2023)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">>2M</div>
+                    <div class="stat-label">Signage Units Sold in 2023</div>
+                     <p class="text-xs text-gray-500 mt-1">(A Record-Breaking Volume)</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-center md:text-left">Global TV Market Share (2024)</h3>
+                    <p class="text-sm text-gray-600 mb-4 text-center md:text-left">Samsung continues to lead the overall television market, demonstrating its widespread consumer trust and technological superiority.</p>
+                    <div class="chart-container h-[250px] md:h-[300px] max-h-[300px]">
+                        <canvas id="tvMarketShareChart"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-center md:text-left">Digital Signage Market Share (2023)</h3>
+                    <p class="text-sm text-gray-600 mb-4 text-center md:text-left">In the competitive digital signage landscape, Samsung's leadership is even more pronounced, capturing a significant one-third of the market.</p>
+                    <div class="chart-container h-[250px] md:h-[300px] max-h-[300px]">
+                        <canvas id="signageMarketShareChart"></canvas>
+                    </div>
+                </div>
+            </div>
+             <div class="mt-12">
+                <h3 class="text-xl font-semibold mb-2 text-center">Digital Signage Market Growth Projection</h3>
+                <p class="text-sm text-gray-600 mb-4 text-center max-w-2xl mx-auto">The digital signage market is poised for substantial growth, with LED signage expected to surpass LCD in market value. Samsung is strategically positioned to capitalize on this expansion.</p>
+                <div class="chart-container h-[300px] md:h-[400px] max-h-[400px] max-w-3xl">
+                    <canvas id="signageMarketGrowthChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 border-gray-300">
+
+        <section id="the-wall" class="py-12">
+            <h2 class="section-title text-center">The Power of Micro LED: "The Wall"</h2>
+            <p class="section-intro text-center">
+                Samsung's "The Wall" represents a paradigm shift in display technology. Leveraging self-lit RGB Micro LEDs, it delivers unparalleled visual fidelity, modularity, and performance, making it a transformative solution for broadcast, virtual production, and luxury commercial environments.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <div class="feature-card">
+                    <div class="feature-icon">&#128262;</div>
+                    <h3 class="feature-title">Pure Black & Infinite Contrast</h3>
+                    <p class="feature-description">Black Seal Technology and individually controlled pixels achieve perfect blacks and stunning depth, crucial for on-camera realism.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127752;</div>
+                    <h3 class="feature-title">Ultra Chroma Color</h3>
+                    <p class="feature-description">20-bit processing delivers exceptionally pure and accurate RGB colors, vital for color-critical broadcast applications.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#129504;</div>
+                    <h3 class="feature-title">MICRO AI Processor</h3>
+                    <p class="feature-description">Instantly optimizes content up to 8K, enhancing contrast and removing noise for flawless picture quality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128250;</div>
+                    <h3 class="feature-title">Flicker-Free Broadcast</h3>
+                    <p class="feature-description">Ultra-high refresh rates (up to 15,360Hz) and Genlock ensure seamless, artifact-free on-camera performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#129520;</div>
+                    <h3 class="feature-title">Modular Canvas</h3>
+                    <p class="feature-description">Limitless flexibility in size, shape, and curvature (up to 5800R/6000R), adapting to any creative vision or studio layout.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128736;</div>
+                    <h3 class="feature-title">Effortless Installation</h3>
+                    <p class="feature-description">Factory Seam Adjustment and cable-less docking connections significantly reduce setup time and complexity.</p>
+                </div>
+            </div>
+            <p class="text-md text-gray-700 text-center max-w-3xl mx-auto">
+                "The Wall" is particularly impactful in virtual production, enabling creators to build immersive, dynamic sets that blend physical and digital worlds seamlessly. Its fine pixel pitches (down to 0.84mm) and advanced studio frame rate support make it a cornerstone of modern content creation.
+            </p>
+        </section>
+
+        <hr class="my-12 border-gray-300">
+
+        <section id="onyx-led" class="py-12">
+            <h2 class="section-title text-center">Onyx Cinema LED: Immersive Experiences</h2>
+            <p class="section-intro text-center">
+                Samsung Onyx redefines the cinematic and large-venue viewing experience. As the world's first DCI-certified Cinema LED display, Onyx delivers breathtaking visuals, making it ideal for movie theaters, live sports, concerts, and high-impact presentations.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                 <div class="feature-card">
+                    <div class="feature-icon">&#127902;</div>
+                    <h3 class="feature-title">DCI-Certified Brilliance</h3>
+                    <p class="feature-description">Adheres to rigorous Digital Cinema Initiatives standards, ensuring professional-grade performance and reliability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127769;</div>
+                    <h3 class="feature-title">True Black Immersion</h3>
+                    <p class="feature-description">Self-emissive LEDs produce true blacks and infinite contrast, eliminating washed-out visuals common with projectors.</p>
+                </div>
+                 <div class="feature-card">
+                    <div class="feature-icon">&#127917;</div>
+                    <h3 class="feature-title">High Frame Rate Action</h3>
+                    <p class="feature-description">Supports 4K resolution at 120Hz, delivering ultra-smooth motion for fast-paced sports, concerts, and gaming.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#9728;&#65039;</div>
+                    <h3 class="feature-title">Bright Room Ready</h3>
+                    <p class="feature-description">Peak brightness of 300 nits (6x cinema standard) ensures vivid playback even in environments with ambient light.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128207;</div>
+                    <h3 class="feature-title">Flexible Scaling</h3>
+                    <p class="feature-description">Modular design allows for custom screen sizes from 5m to over 20m wide, fitting diverse venue dimensions.</p>
+                </div>
+                 <div class="feature-card">
+                    <div class="feature-icon">&#128119;</div>
+                    <h3 class="feature-title">Long-Term Reliability</h3>
+                    <p class="feature-description">Industry-first 10-year warranty and auto-calibration ensure consistent performance and future-proof investment.</p>
+                </div>
+            </div>
+             <p class="text-md text-gray-700 text-center max-w-3xl mx-auto">
+                Onyx empowers venues to diversify their offerings beyond traditional cinema, hosting a wide range of live and alternative content with unparalleled visual impact, creating new revenue streams and engaging audiences like never before.
+            </p>
+        </section>
+
+        <hr class="my-12 border-gray-300">
+
+        <section id="interactive-innovation" class="py-12">
+            <h2 class="section-title text-center">Interactive Innovation: Collaboration & Self-Service</h2>
+            <p class="section-intro text-center">
+                Samsung is at the forefront of interactive display technology, offering solutions that transform collaboration in education and corporate settings, and streamline customer experiences in retail and QSR environments.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#FF6B6B]">AI-Powered Interactive Displays</h3>
+                    <p class="mb-4 text-gray-600">The Samsung Interactive Pro (WAFX-P) series, featuring the Samsung AI Assistant, revolutionizes meetings and lessons with intelligent tools:</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="feature-icon text-2xl mr-3">&#128270;</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Circle to Search</h4>
+                                <p class="text-sm text-gray-500">Instantly get search results by simply circling on-screen content.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                             <span class="feature-icon text-2xl mr-3">&#128221;</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">AI Summary</h4>
+                                <p class="text-sm text-gray-500">Automatically create concise recaps of lessons or meetings.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="feature-icon text-2xl mr-3">&#128172;</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Live Transcript</h4>
+                                <p class="text-sm text-gray-500">Convert spoken words to text in real-time for enhanced accessibility.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-gray-600">Combined with low-latency multi-touch (up to 40 points), SmartView+ wireless sharing, and Google EDLA certification, these displays are central to modern hybrid work and learning.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#FFD166]">Streamlined Self-Service Kiosks</h3>
+                    <p class="mb-4 text-gray-600">Samsung Kiosks offer an all-in-one solution for modern, secure, and contactless customer interactions, enhancing operational efficiency and revenue.</p>
+                    <ul class="space-y-3">
+                         <li class="flex items-start">
+                            <span class="feature-icon text-2xl mr-3 text-[#06D6A0]">&#128187;</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">OS Versatility</h4>
+                                <p class="text-sm text-gray-500">Choose between Tizen OS for customization or Windows 10 IoT for broad device compatibility.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="feature-icon text-2xl mr-3 text-[#06D6A0]">&#128722;</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Integrated Transactions</h4>
+                                <p class="text-sm text-gray-500">Includes display, printer, card terminal, scanner, and NFC, often powered by GRUBBRR software.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="feature-icon text-2xl mr-3 text-[#06D6A0]">&#128200;</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Efficiency & Revenue Boost</h4>
+                                <p class="text-sm text-gray-500">Empowers customers, improves order accuracy, and enables concepts like "endless aisle" in retail.</p>
+                            </div>
+                        </li>
+                    </ul>
+                     <p class="mt-4 text-gray-600">These kiosks are a strategic response to labor shortages and growing consumer demand for convenient self-service options across retail, QSR, and live event venues.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 border-gray-300">
+
+        <section id="software-ai" class="py-12">
+            <h2 class="section-title text-center">The Software & AI Backbone</h2>
+            <p class="section-intro text-center">
+                Samsung's leadership extends beyond hardware, encompassing a robust ecosystem of integrated software and AI-driven capabilities. These platforms are crucial for managing content, enhancing user experiences, and unlocking the full potential of Samsung's commercial displays.
+            </p>
+            <div class="flowchart-container">
+                <div class="flowchart-node bg-[#118AB2]">Samsung Display Hardware</div>
+                <div class="flowchart-arrow">&#11015;</div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center mb-4">
+                    <div class="flowchart-node bg-[#06D6A0] w-full">MICRO AI Processor</div>
+                    <div class="flowchart-node bg-[#06D6A0] w-full">AI Assistant</div>
+                    <div class="flowchart-node bg-[#06D6A0] w-full">Intelligent Upscaling</div>
+                </div>
+                 <div class="flowchart-arrow">&#11015;</div>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2 text-[#FF6B6B]">MagicINFO Platform</h3>
+                        <p class="text-sm text-gray-600">An intuitive, end-to-end digital signage software solution for content creation, scheduling, and remote display management. Standard on many Samsung commercial displays.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2 text-[#FFD166]">Samsung VXT (Cloud)</h3>
+                        <p class="text-sm text-gray-600">A versatile cloud-based CMS compatible with all Samsung display types. Features VXT Canvas for easy content creation, SyncPlay for synchronized playback, and vertical-specific options.</p>
+                    </div>
+                </div>
+                 <div class="flowchart-arrow">&#11015;</div>
+                <div class="flowchart-node bg-[#118AB2]">Enhanced Performance & User Experience</div>
+            </div>
+             <p class="mt-8 text-md text-gray-700 text-center max-w-3xl mx-auto">
+                This integrated approach simplifies deployment, ensures compatibility, and provides powerful tools for businesses to create compelling visual communications. AI is not just a feature but a fundamental component, driving better picture quality, automating tasks, and paving the way for personalized content delivery.
+            </p>
+        </section>
+
+        <hr class="my-12 border-gray-300">
+
+        <section id="future-forward" class="py-12">
+            <h2 class="section-title text-center">Future Forward: Next-Generation Display Tech</h2>
+            <p class="section-intro text-center">
+                Samsung continues to push the boundaries of display innovation, investing heavily in research and development to shape the future of visual communication. Key trends include advancements in MicroLED, the pervasive role of AI, and a strong commitment to sustainability.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card border-t-4 border-[#4D96FF]">
+                    <div class="feature-icon text-[#4D96FF]">&#128269;</div>
+                    <h3 class="feature-title">Transparent MICRO LED</h3>
+                    <p class="feature-description">Hailed as the "Digital Signage Innovation of the Year," this technology blends digital content with physical spaces, opening new possibilities for retail, architectural, and augmented reality applications.</p>
+                </div>
+                <div class="feature-card border-t-4 border-[#FF6B6B]">
+                     <div class="feature-icon text-[#FF6B6B]">&#129302;</div>
+                    <h3 class="feature-title">Hyper-Personalized AI</h3>
+                    <p class="feature-description">AI is set to revolutionize audience tracking, personalized content delivery, and dynamic content generation, making signage more intelligent and responsive.</p>
+                </div>
+                <div class="feature-card border-t-4 border-[#06D6A0]">
+                    <div class="feature-icon text-[#06D6A0]">&#127793;</div>
+                    <h3 class="feature-title">Sustainable Screens</h3>
+                    <p class="feature-description">Focus on energy efficiency with transitions from LCD to LED, the rise of Color E-Paper, and eco-conscious designs, aligning with global ESG priorities.</p>
+                </div>
+            </div>
+             <p class="mt-8 text-md text-gray-700 text-center max-w-3xl mx-auto">
+                With ongoing R&D, including plans for even larger MicroLED TVs and advanced AI functionalities, Samsung is poised to continue its leadership, delivering solutions that are not only technologically superior but also environmentally responsible and aligned with the future of interactive digital experiences.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="py-8 bg-[#073B4C] text-gray-300 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-sm">&copy; 2025 Samsung Display Market Insights. Data synthesized from public research and Samsung reports.</p>
+            <p class="text-xs mt-1">This infographic is for illustrative purposes and based on available market data.</p>
+        </div>
+    </footer>
+
+    <script>
+        const CHART_COLORS = {
+            red: '#FF6B6B',
+            yellow: '#FFD166',
+            green: '#06D6A0',
+            blue: '#118AB2',
+            darkTeal: '#073B4C',
+            lightGrey: '#F8F9FA'
+        };
+
+        function wrapLabels(label, maxWidth) {
+            if (typeof label !== 'string' || label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length <= maxWidth) {
+                    currentLine += (currentLine ? ' ' : '') + word;
+                } else {
+                    if (currentLine) lines.push(currentLine);
+                    currentLine = word;
+                }
+            }
+            if (currentLine) lines.push(currentLine);
+            return lines.length > 0 ? lines : [label];
+        }
+        
+        const commonChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: CHART_COLORS.darkTeal,
+                        font: { size: 12 }
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(0,0,0,0.7)',
+                    titleColor: '#FFFFFF',
+                    bodyColor: '#FFFFFF',
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: { 
+                        color: CHART_COLORS.darkTeal,
+                        font: { size: 12 },
+                        callback: function(value, index, ticks) {
+                            const label = this.getLabelForValue(value);
+                            return wrapLabels(label, 10);
+                        }
+                    },
+                    grid: { display: false }
+                },
+                y: {
+                    ticks: { color: CHART_COLORS.darkTeal, font: { size: 12 } },
+                    grid: { color: '#E2E8F0' }
+                }
+            }
+        };
+
+        window.onload = function() {
+            const tvMarketShareData = {
+                labels: ['Samsung', 'Others'],
+                datasets: [{
+                    label: 'Global TV Market Share (2024)',
+                    data: [28.3, 100 - 28.3],
+                    backgroundColor: [CHART_COLORS.blue, CHART_COLORS.lightGrey],
+                    borderColor: [CHART_COLORS.blue, CHART_COLORS.lightGrey],
+                    borderWidth: 1
+                }]
+            };
+            new Chart(document.getElementById('tvMarketShareChart'), {
+                type: 'doughnut',
+                data: tvMarketShareData,
+                options: { ...commonChartOptions, cutout: '70%' }
+            });
+
+            const signageMarketShareData = {
+                labels: ['Samsung', 'Others'],
+                datasets: [{
+                    label: 'Digital Signage Market Share (2023)',
+                    data: [33, 100 - 33],
+                    backgroundColor: [CHART_COLORS.green, CHART_COLORS.lightGrey],
+                    borderColor: [CHART_COLORS.green, CHART_COLORS.lightGrey],
+                    borderWidth: 1
+                }]
+            };
+            new Chart(document.getElementById('signageMarketShareChart'), {
+                type: 'doughnut',
+                data: signageMarketShareData,
+                options: { ...commonChartOptions, cutout: '70%' }
+            });
+            
+            const signageMarketGrowthData = {
+                labels: ['2020', '2023', '2027 (Forecast)'],
+                datasets: [{
+                    label: 'Digital Signage Market Value ($ Billion)',
+                    data: [14, 18.9, 24.6],
+                    fill: false,
+                    borderColor: CHART_COLORS.red,
+                    tension: 0.1,
+                    pointBackgroundColor: CHART_COLORS.red,
+                    pointRadius: 5
+                },
+                {
+                    label: 'LED Signage Market Value ($ Billion)',
+                    data: [null, 5.7, 13],
+                    fill: false,
+                    borderColor: CHART_COLORS.yellow,
+                    tension: 0.1,
+                    pointBackgroundColor: CHART_COLORS.yellow,
+                    pointRadius: 5
+                }]
+            };
+
+            new Chart(document.getElementById('signageMarketGrowthChart'), {
+                type: 'line',
+                data: signageMarketGrowthData,
+                options: {
+                    ...commonChartOptions,
+                    scales: {
+                         x: {
+                            ticks: { color: CHART_COLORS.darkTeal, font: { size: 12 } },
+                            grid: { display: false }
+                        },
+                        y: {
+                            ticks: { color: CHART_COLORS.darkTeal, font: { size: 12 }, callback: function(value) { return '$' + value + 'B';} },
+                            grid: { color: '#E2E8F0' },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const offset = document.querySelector('.nav-sticky').offsetHeight;
+                        const bodyRect = document.body.getBoundingClientRect().top;
+                        const elementRect = targetElement.getBoundingClientRect().top;
+                        const elementPosition = elementRect - bodyRect;
+                        const offsetPosition = elementPosition - offset - 20;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        };
+    </script>
+</body>
+</html>
